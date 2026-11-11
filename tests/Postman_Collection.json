@@ -1,0 +1,29 @@
+{
+  "info": {
+    "name": "Employee Background Verification API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Get All Verifications",
+      "request": {
+        "method": "GET",
+        "url": "https://localhost:5001/api/verification"
+      }
+    },
+    {
+      "name": "Create Candidate Verification",
+      "request": {
+        "method": "POST",
+        "header": [
+          { "key": "Content-Type", "value": "application/json" }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"firstName\": \"Rutuja\",\n  \"lastName\": \"Ugale\",\n  \"email\": \"rutuja@example.com\",\n  \"phoneNumber\": \"+919876543210\",\n  \"department\": \"Engineering\",\n  \"appliedRole\": \"Full Stack Developer\"\n}"
+        },
+        "url": "https://localhost:5001/api/verification"
+      }
+    }
+  ]
+}
